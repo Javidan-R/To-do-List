@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <title>Todo App</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="my-4 text-center">#todo</h1>
+    <div class="btn-group mb-3  d-flex justify-content-center" role="group" aria-label="Todo Filters">
+      <button type="button" class="btn btn-primary nav-item" id="first">All</button>
+      <button type="button" class="btn btn-primary nav-item" id="second">Active</button>
+      <button type="button" class="btn btn-primary nav-item" id="third">Completed</button>
+    </div>
+    <div class="row">
+      <div class="col">
+        <form id="todo-form">
+          <div class="input-group">
+            <input type="text" class="form-control addInput" placeholder="Add a task" id="todo-input">
+            <button class="btn btn-primary addBtn" type="submit">Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <ul class="list-group my-3 details" id="todo-list"></ul>
+    <button type="button" class="btn btn-danger mt-3 all-delete" id="clear-completed">Clear Completed</button>
+  </div>
+
+  <!-- Include Bootstrap JS and jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
